@@ -1,3 +1,8 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
 body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
@@ -32,6 +37,7 @@ section {
     border: 1px solid rgb(0, 0, 0 / 10%);
     padding: 10px;
     background-color: #abe;
+    font-size: .9rem;
 }
 
 section p {
@@ -39,5 +45,5 @@ section p {
 }
 
 footer {
-    font-size: 9rem;
+    font-size: .9rem;
 }
