@@ -11,7 +11,7 @@
     --body-font: Arial, Helvetica, sans-serif;
 }
 
-/* Universal Reset */
+/* Reset */
 * {
     margin: 0;
     padding: 0;
@@ -19,7 +19,7 @@
 }
 
 /* ----------------------------------------------------
-   Base Styles
+   Base
 ---------------------------------------------------- */
 body {
     font-family: var(--body-font);
@@ -28,9 +28,6 @@ body {
     line-height: 1.6;
 }
 
-/* ----------------------------------------------------
-   Layout Containers
----------------------------------------------------- */
 header,
 main,
 footer {
@@ -47,10 +44,18 @@ header {
     align-items: center;
     justify-content: space-between;
     border-bottom: 3px solid var(--primary-color);
+    gap: 1rem;
 }
 
 .logo {
     width: 120px;
+}
+
+header h1 {
+    font-size: 1.6rem;
+    font-family: var(--heading-font);
+    color: var(--primary-color);
+    flex-grow: 1;
 }
 
 nav {
@@ -62,7 +67,7 @@ nav a {
     text-decoration: none;
     color: var(--primary-color);
     font-weight: bold;
-    transition: color 0.2s ease-in-out;
+    transition: 0.2s ease-in-out;
 }
 
 nav a:hover,
@@ -74,11 +79,10 @@ nav a.active {
 }
 
 /* ----------------------------------------------------
-   HERO SECTION — Using .hero (required)
+   HERO SECTION
 ---------------------------------------------------- */
 .hero {
     position: relative;
-    /* REQUIRED */
     margin-top: 1rem;
 }
 
@@ -88,7 +92,6 @@ nav a.active {
     display: block;
 }
 
-/* REQUIRED: absolute heading */
 .hero h1 {
     position: absolute;
     top: 15%;
@@ -100,7 +103,6 @@ nav a.active {
     border-radius: 6px;
 }
 
-/* REQUIRED: absolute article */
 .hero article {
     position: absolute;
     bottom: 10%;
@@ -108,11 +110,9 @@ nav a.active {
     right: 10%;
     background-color: rgba(255, 255, 255, 0.85);
     padding: 1rem;
-    display: block;
     border-radius: 6px;
 }
 
-/* REQUIRED: float right */
 .hero article img {
     width: 140px;
     float: right;
@@ -134,21 +134,30 @@ section {
 }
 
 /* ----------------------------------------------------
-   Adventure Placeholder
+   ADVENTURE GALLERY (FINAL VERSION)
 ---------------------------------------------------- */
 .adventure-gallery {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 140px;
-    border: 2px dashed var(--primary-color);
-    border-radius: 8px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
     margin-top: 1rem;
 }
 
-.placeholder {
-    color: var(--primary-color);
+.adventure-gallery figure {
+    text-align: center;
+}
+
+.adventure-gallery img {
+    width: 100%;
+    height: auto;
+    border-radius: 6px;
+    display: block;
+}
+
+.adventure-gallery figcaption {
+    margin-top: 0.5rem;
     font-style: italic;
+    color: var(--primary-color);
 }
 
 /* ----------------------------------------------------
@@ -163,7 +172,6 @@ footer {
     align-items: center;
 }
 
-/* REQUIRED: remove underline from social media links */
 .socialmedia a {
     text-decoration: none;
 }
