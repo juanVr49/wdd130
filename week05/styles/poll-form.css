@@ -1,0 +1,139 @@
+/* ----------------------------------------------------
+   Universal Reset
+---------------------------------------------------- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* ----------------------------------------------------
+   Base Styles
+---------------------------------------------------- */
+body {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
+        Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: medium;
+    font-weight: 400;
+    font-size: 16px;
+    background-color: #f6f6f6;
+}
+
+/* ----------------------------------------------------
+   Header
+---------------------------------------------------- */
+header {
+    text-align: center;
+    padding: 1rem 0;
+    border-bottom: 1px solid black;
+    background-color: aliceblue;
+}
+
+/* ----------------------------------------------------
+   Form Layout
+---------------------------------------------------- */
+form {
+    max-width: 600px;
+    margin: 1.5rem auto;
+    padding: 2rem;
+    background-color: #eee;
+    border: 2px solid #ccc;
+    border-radius: 1rem;
+    display: grid;
+    gap: 1rem;
+}
+
+/* Form rows */
+.form-item {
+    display: grid;
+    align-items: center;
+}
+
+/* Column layouts */
+.column1 {
+    grid-template-columns: 3fr 1fr;
+    margin: 0.4rem 0;
+}
+
+.column2 {
+    grid-template-columns: 1fr 2fr;
+    margin: 0.3rem 0;
+}
+
+/* ----------------------------------------------------
+   Fieldset & Legend
+---------------------------------------------------- */
+fieldset {
+    display: grid;
+    gap: 1rem;
+    margin: 0.5rem 0;
+    border: 1px solid #aaa;
+    padding: 1rem;
+}
+
+legend {
+    padding: 0.5rem;
+    color: navy;
+    font-size: 1.3em;
+}
+
+/* ----------------------------------------------------
+   Form Elements
+---------------------------------------------------- */
+label,
+input,
+button,
+select,
+textarea {
+    font-family: 'Times New Roman', Times, serif;
+}
+
+label {
+    text-align: right;
+    padding-right: 1rem;
+}
+
+input,
+textarea,
+select {
+    padding: 0.25rem;
+    font-size: 1.1rem;
+    border: 1px solid #bbb;
+}
+
+/* Checkbox fix */
+input[type="checkbox"] {
+    width: 18px;
+    height: 22px;
+    vertical-align: bottom;
+}
+
+/* ----------------------------------------------------
+   Buttons
+---------------------------------------------------- */
+button {
+    margin: 0.5rem 0;
+    background-color: navy;
+    color: #fff;
+    border: none;
+    border-radius: 0.4rem;
+    padding: 0.75rem;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: darkgreen;
+}
+
+/* ----------------------------------------------------
+   Footer
+---------------------------------------------------- */
+footer {
+    margin: 1rem auto;
+    width: 650px;
+    text-align: center;
+    font-size: 0.8em;
+    color: #777;
+    border-top: 1px solid #ccc;
+}

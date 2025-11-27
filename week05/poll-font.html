@@ -4,52 +4,66 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Poll Form</title>
+    <title>HTML Form - User Poll</title>
     <link rel="stylesheet" href="styles/poll-form.css">
 </head>
 
 <body>
+
     <header>
-        <h1>Poll Form</h1>
+        <h1>WDD 130 | HTML Form - User Poll</h1>
     </header>
 
     <main>
         <form>
+            <!-- Full name -->
+            <div class="form-item column2">
+                <label for="fullname">Full Name:</label>
+                <input type="text" id="fullname" name="fullname" required>
+            </div>
 
-            <!-- FULL NAME -->
-            <label for="fullname">Full name:</label>
-            <input type="text" id="fullname" name="fullname" required>
+            <!-- Email -->
+            <div class="form-item column2">
+                <label for="usermail">Email:</label>
+                <input type="email" id="usermail" name="usermail" required>
+            </div>
 
-            <!-- EMAIL -->
-            <label for="usermail">Email:</label>
-            <input type="email" id="usermail" name="usermail" required>
+            <!-- Favorite browser -->
+            <div class="form-item column2">
+                <label for="browser">What is your favorite internet browser?</label>
+                <select name="browser" id="browser">
+                    <option value="chrome">Chrome</option>
+                    <option value="safari">Safari</option>
+                    <option value="edge">Edge</option>
+                    <option value="brave">Brave</option>
+                    <option value="firefox">Firefox</option>
+                </select>
+            </div>
 
-            <!-- FAVORITE BROWSER -->
-            <label for="browser">What is your favorite browser?</label>
-            <select name="browser" id="browser">
-                <option value="chrome">Chrome</option>
-                <option value="safari">Safari</option>
-                <option value="edge">Edge</option>
-                <option value="brave">Brave</option>
-                <option value="firefox">Firefox</option>
-            </select>
+            <!-- Pet checkbox -->
+            <div class="form-item column2">
+                <label for="pet">Do you have a household pet?</label>
+                <input type="checkbox" id="pet" name="pet">
+            </div>
 
-            <!-- PET QUESTION -->
-            <label for="pet">Do you have a household pet?</label>
-            <input type="checkbox" id="pet" name="pet">
+            <!-- Places textarea -->
+            <div class="form-item column2">
+                <label for="places">List the places you have lived:</label>
+                <textarea id="places" name="places" rows="4"
+                    placeholder="Stillwater Florida, Amsterdam Netherlands, Timbuktu Mali"></textarea>
+            </div>
 
-            <!-- FEEDBACK -->
-            <label for="feedback">List of places you have lived:</label>
-            <textarea id="feedback" name="feedback" rows="5"
-                placeholder="Venezuela, Chile, Argentina, Utah, California"></textarea>
-
-            <!-- SUBMIT -->
-            <button type="submit">Submit Poll</button>
-
+            <!-- Submit button -->
+            <div class="form-item button-row">
+                <button type="submit">Submit Poll</button>
+            </div>
         </form>
     </main>
 
-    <footer></footer>
+    <footer>
+        ©2024 | HTML Form - User Poll Activity | Juan Villalobos.
+    </footer>
+
 </body>
 
 </html>
