@@ -8,13 +8,12 @@
     --body-font: Arial, Helvetica, sans-serif;
 }
 
-
+/* RESET */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-
 
 body {
     font-family: var(--body-font);
@@ -23,14 +22,13 @@ body {
     line-height: 1.6;
 }
 
-
 .container {
     max-width: 900px;
     margin: 0 auto;
     padding: 1rem;
 }
 
-
+/* HEADER */
 header {
     display: flex;
     align-items: center;
@@ -72,7 +70,7 @@ nav a.active {
     cursor: pointer;
 }
 
-
+/* HERO */
 .hero {
     position: relative;
     margin-top: 1rem;
@@ -104,7 +102,6 @@ nav a.active {
     padding: 1rem;
     border-radius: 6px;
     overflow: auto;
-
 }
 
 .hero article img {
@@ -114,13 +111,14 @@ nav a.active {
     border-radius: 6px;
 }
 
-
+/* HEADINGS */
 h2 {
     font-family: var(--heading-font);
     color: var(--secondary-color);
     margin: 1.5rem 0 0.5rem;
 }
 
+/* ADVENTURE GALLERY */
 .adventure-gallery {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -145,8 +143,7 @@ h2 {
     color: var(--primary-color);
 }
 
-
-
+/* SECTION STYLING */
 section {
     border-bottom: 1px solid var(--primary-color);
     padding-bottom: 1.5rem;
@@ -154,6 +151,7 @@ section {
     text-align: center;
 }
 
+/* CONTACT PAGE GRID */
 .contact-grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -171,6 +169,7 @@ section {
     border-radius: 8px;
 }
 
+/* FORM */
 form {
     background-color: #ddd;
     padding: 2rem;
@@ -217,9 +216,10 @@ button {
 }
 
 button:hover {
-    background-color: black
+    background-color: black;
 }
 
+/* FOOTER */
 footer {
     margin-top: 2rem;
     padding: 1.5rem 1rem;
@@ -242,7 +242,7 @@ footer {
     cursor: pointer;
 }
 
-
+/* MEDIA QUERIES */
 @media (max-width: 600px) {
     .hero h1 {
         font-size: 1.5rem;
